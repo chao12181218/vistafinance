@@ -11,6 +11,7 @@ class TestController extends Controller
     public $errorCode = 401;
     public function index()
     {
+        echo '321';
 
     }
 

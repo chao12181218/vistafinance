@@ -18,6 +18,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 //登录
 Route::post('login', 'API\UserController@login');
+Route::get('test', 'TestController@index');
 //授权的接口
 Route::group(['middleware' => 'auth:api'], function () {
     //获取用户信息
